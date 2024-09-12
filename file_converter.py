@@ -1,6 +1,7 @@
 from pdf2docx import Converter
 from docx2pdf import convert
 
+
 def pdf_converter(file):
     try:
         pdf_file = file
@@ -14,12 +15,14 @@ def pdf_converter(file):
     except :
         print("something went wrong, please try again")
         
+        
 def docx_converter(pdf_file):
     try:
         convert(pdf_file,"converted.pdf")
         print(f"{pdf_file} has been converter to the converted.pdf")
     except:
         print("something went wrong, please try again")
+        
         
 if __name__ == "__main__":
     file = input("enter the name of the file")
