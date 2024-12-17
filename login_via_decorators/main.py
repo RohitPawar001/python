@@ -1,4 +1,4 @@
-from python.utils import loginInfo
+from login_via_decorators.utils import loginInfo
 
 
 @loginInfo()
